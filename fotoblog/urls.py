@@ -30,6 +30,7 @@ urlpatterns = [
     # path('', authentication.views.LoginPage.as_view(), name='login'),
     path('logout/', authentication.views.logout_user, name='logout'),
     path('home/', blog.views.home, name='home'),
+    path('photo-feed/', blog.views.photo_feed, name='photo_feed'),
     path('photo/upload/', blog.views.photo_upload, name='photo_upload'),
     path('profile-photo/upload', authentication.views.profile_photo_upload, name='profile_photo_upload'),
     path('blog/create', blog.views.blog_and_photo_upload, name='blog_create'),

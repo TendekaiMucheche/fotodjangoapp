@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load blog_extras %}
+
+{% block content %}
+    <h2>Your Picture Feed</h2>
+    <div class="grid-container">
+        {% for photo in page_obj %}
+                {% include 'blog/partials/photo_snippet.html' %}
+        {% endfor %}
+    </div>
+
+     {% include 'blog/partials/page_navigator.html' %}
+
+{% endblock content %}
